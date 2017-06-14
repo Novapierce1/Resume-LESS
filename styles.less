@@ -29,7 +29,8 @@
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     color: @primary;
-    left: 10%;
+    left: 15%;
+    bottom: 20px;
     }
     .titleimage{
     height: 45%;
@@ -38,14 +39,14 @@
     position: relative;
     left: 2em;
     top: 2em;
-
     }
     .subtitle{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     color: darkgrey 0.7;
-    left: 10%;
+    left: 15%;
+    bottom: 20px;
     }
 }
 .infoblock{
@@ -108,14 +109,14 @@
                 background-color:whitesmoke;
                 }
             display: block;    
-            width:50%;
+            width: 100%;
             padding: 5px 10px;
             box-sizing: border-box;
             background-color: lightgray;
             color: @primary;
-            }
+    }
     textarea {
-        width: 50%;
+        width: 100%;
         padding: 12px 20px;
         box-sizing: border-box;
         border-radius: 4px;
@@ -128,19 +129,22 @@
         background-color:lightgray;
         border: none;
         color: @primary;
-        padding: 16px 32px;
         text-decoration: none;
-        margin: 4px 2px;
         cursor: pointer; 
-        display: flex;
+        float: right;
+        padding: 10px;
     }
 }
-.dribble{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    padding: 3px;
-    margin: auto;
+
+#images {
     text-align: center;
-    font-style: italic;
+
+    .dribble, .instagram {
+        width: 2em;
+        height: 2em;
+    }
+
+    p {
+        display: inline;
+    }
 }

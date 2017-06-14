@@ -25,7 +25,8 @@
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   color: blue;
-  left: 10%;
+  left: 15%;
+  bottom: 20px;
 }
 .titleblock .titleimage {
   height: 45%;
@@ -40,7 +41,8 @@
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   color: darkgrey 0.7;
-  left: 10%;
+  left: 15%;
+  bottom: 20px;
 }
 .infoblock {
   height: 300px;
@@ -99,7 +101,7 @@
 }
 .messagebox input[type=text] {
   display: block;
-  width: 50%;
+  width: 100%;
   padding: 5px 10px;
   box-sizing: border-box;
   background-color: lightgray;
@@ -109,7 +111,7 @@
   background-color: whitesmoke;
 }
 .messagebox textarea {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -122,18 +124,19 @@
   background-color: lightgray;
   border: none;
   color: blue;
-  padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
   cursor: pointer;
-  display: flex;
+  float: right;
+  padding: 10px;
 }
-.dribble {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  padding: 3px;
-  margin: auto;
+#images {
   text-align: center;
-  font-style: italic;
+}
+#images .dribble,
+#images .instagram {
+  width: 2em;
+  height: 2em;
+}
+#images p {
+  display: inline;
 }
