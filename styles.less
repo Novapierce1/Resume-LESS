@@ -1,12 +1,13 @@
-@primary:orangered;
+@primary: blue;
 
 .Name{
     color: @primary;
     font-family: Helvetica, sans-serif;
+    font-size: 20px;
     border: solid black 2px;
     align-items: left;
-    padding: 2px;
-    width: 130px;
+    padding: 3px;
+    width: 20%;
     text-align: center;
     float: left;
 }
@@ -36,6 +37,7 @@
     position: relative;
     left: 2em;
     top: 2em;
+
     }
     .subtitle{
     font-size: 25px;
@@ -73,11 +75,13 @@
         text-align: center;
         padding: 4px;
         font-size: 16px 45%;
+        overflow: scroll;
         }
 }
 .work{
     height: 300px;
-    align-content: right;
+    align-content: center;
+    text-align: center;
         .fossil{
         width: 40%;
         padding: 5px;
@@ -91,19 +95,51 @@
 
 }
 .images{
-    width: 90%;
+    width: 300px;
     height: 200px;
-    margin: 2px;
+    margin: 10px;
     padding: 2px;
 }
 .messagebox{
-   margin:auto;
-   width:50%;
-   padding: 5px;
+    display: block;
+    margin: 10px;
+    input[type=text] {
+        input[type=text]:focus{
+            background-color:whitesmoke;
+        }
+    margin-left: auto 4;
+    margin-right: auto 4;
+    width:50%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: lightgray;
+    color: @primary;
+    }
+    textarea {
+        width: 50%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: lightgray;
+        color:@primary;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input[type=button] {
+        background-color:lightgray;
+        border: none;
+        color: @primary;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
 }
 .dribble{
     width: 5%;
     height: 5%;
-    display: inline-block;
+    display: block;
+    padding: 3px;
     margin: auto;
+    text-align: center;
 }
